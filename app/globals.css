@@ -1,16 +1,4 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 :root{--bg:#0b0f1a;--panel:#0f1424;--muted:#95a2b3;--ink:#e7ecf3;--accent:#7c3aed;--accent2:#10b981;}
-html,body{height:100%}
-body{background:var(--bg);color:var(--ink)}
-.card{background:var(--panel);border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
-.kpi{display:flex;flex-direction:column;gap:.375rem;padding:14px 16px}
-.kpi h4{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
-.kpi .v{font-size:1.75rem;font-weight:700}
-.progress{height:10px;background:rgba(255,255,255,.05);border-radius:9999px;overflow:hidden}
-.progress>div{height:100%;background:linear-gradient(90deg,var(--accent),#a78bfa)}
-.badge{padding:4px 8px;border-radius:9999px;font-size:.75rem}
-.badge.green{background:rgba(16,185,129,.15);color:#34d399}
-.badge.red{background:rgba(239,68,68,.15);color:#f87171}
