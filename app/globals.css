@@ -1,4 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{--bg:#0b0f1a;--panel:#0f1424;--muted:#95a2b3;--ink:#e7ecf3;--accent:#7c3aed;--accent2:#10b981;}
+
+:root {
+  --bg: #0b0f1a;
+  --panel: #0f1424;
+  --muted: #95a2b3;
+  --ink: #e7ecf3;
+  --accent: #7c3aed;
+  --accent2: #10b981;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, sans-serif;
+  padding: 1rem;
+}
+
+h1, h2, h3, h4 {
+  color: var(--ink);
+}
+
+.card {
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: var(--accent2);
+}
